@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sale">
+        <a href="#exit" class="close"><i class='bx bx-x'></i></a>
+        <div id="cart" class="cart">
+            <p class="emptyCart" id="emptyCart">Ваша корзина пуста</p>
+            <div class="cartItem" id="cartItem"></div>
+        </div>
+        <div class="sale-sum" id="sale-sum">
+            <p>Итог: <span id="payment"></span> тг</p>
+        </div>
+    </div>
+    <div class="main">
+        <header class="header">
+            <a href="#logo" class="logo">SoftBuy</a>
+
+            <div class="navbar-basket">
+                <nav class="navbar">
+                    <a href="#home">Главная</a>
+                    <a href="#Products">Продукт</a>
+                </nav>
+                <p class="sale-count" id="sale-count">0</p>
+                <button class="basket" id="basket">
+                    <a href="#basket">
+                        <i class='bx bx-basket'></i>
+                    </a>
+                </button>
+            </div>
+        </header>
+
+        <!-- brand section -->
+        <section class="home" id="home">
+            <h2>Бренды</h2>
+            <div class="brand-container">
+                <div class="brand-box">
+                    <img src="brand-img/apple.png" alt="">
+                    <div class="brand-layer">
+                        <h4>Apple</h4>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="brand-img/samsung.png" alt="">
+                    <div class="brand-layer">
+                        <h4>Samsung</h4>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="brand-img/huawei.png" alt="">
+                    <div class="brand-layer">
+                        <h4>Huawei</h4>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="brand-img/xiaomi.png" alt="">
+                    <div class="brand-layer">
+                        <h4>Xiaomi</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- products section -->
+        <section class="Products" id="Products">
+            <div class="products-container">
+                <div class="brand-type">Apple</div>
+                <div class="product-container" id="product-container"></div>
+            </div>
+            <div class="products-container">
+                <div class="brand-type">Samsung</div>
+                <div class="product-container" id="product-container"></div>
+            </div>
+            <div class="products-container">
+                <div class="brand-type">Huawei</div>
+                <div class="product-container" id="product-container"></div>
+            </div>
+            <div class="products-container">
+                <div class="brand-type">Xiomi</div>
+                <div class="product-container" id="product-container"></div>
+            </div>
+        </section>
+    </div>
+    <script src="2.js"></script>
+</body>
+
+</html>
